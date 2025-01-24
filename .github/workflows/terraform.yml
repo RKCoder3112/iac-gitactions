@@ -14,8 +14,8 @@ on:
 
 env:
 # credentials to login AWS via access key and secret key.variable name should be exactly with same name
-  AWS_ACCESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID}}          #secrets stored on github
-  AWS_SECURE_ACCESS_KEY: ${{secrets.AWS_SECURE_ACCESS_KEY}}  #secrets stored on github
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}          #secrets stored on github
+  AWS_SECURE_ACCESS_KEY: ${{ secrets.AWS_SECURE_ACCESS_KEY }}  #secrets stored on github
 
 # to access and store tf.state file on S3 bucket. variable name can be anything.
   BUCKET_TF_STATE: ${{secrets.BUCKET_TF_STATE}}
