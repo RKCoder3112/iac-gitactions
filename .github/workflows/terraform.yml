@@ -18,7 +18,7 @@ env:
   AWS_SECURE_ACCESS_KEY: ${{ secrets.AWS_SECURE_ACCESS_KEY }}  #secrets stored on github
 
 # to access and store tf.state file on S3 bucket. variable name can be anything.
-  BUCKET_TF_STATE: ${{secrets.BUCKET_TF_STATE}}
+  BUCKET_TF_STATE: ${{ secrets.BUCKET_TF_STATE }}
   AWS_REGION: us-east-1
   EKS_CLUSTER: gitopsproject
 
